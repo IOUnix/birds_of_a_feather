@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 8db002a7487fae043a1df941c3cf140d
+guid: e18243ee774c2a246a7a0bc11d8adcd6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1253571219821158028
-    second: Evidence_0
-  - first:
-      213: -552427264230617045
-    second: Evidence_1
-  - first:
-      213: -4614713277838548562
-    second: Evidence_2
-  - first:
-      213: 5821108066636963852
-    second: Evidence_3
+      213: 509847122748298439
+    second: play2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,89 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Evidence_0
+      name: play2_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 350
-        width: 256
-        height: 1477
+        x: 0
+        y: 0
+        width: 1536
+        height: 1024
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47128e50e9b6a9ee0800000000000000
-      internalID: -1253571219821158028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evidence_1
-      rect:
-        serializedVersion: 2
-        x: 277
-        y: 561
-        width: 256
-        height: 1246
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b201b4f74526558f0800000000000000
-      internalID: -552427264230617045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evidence_2
-      rect:
-        serializedVersion: 2
-        x: 536
-        y: 574
-        width: 255
-        height: 1250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea1a72e39be35ffb0800000000000000
-      internalID: -4614713277838548562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evidence_3
-      rect:
-        serializedVersion: 2
-        x: 787
-        y: 402
-        width: 261
-        height: 1412
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c00ae0fe1fab8c050800000000000000
-      internalID: 5821108066636963852
+      spriteID: 7c4da21c147531700800000000000000
+      internalID: 509847122748298439
       vertices: []
       indices: 
       edges: []
@@ -213,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d4b454dfce5b9c84cb7e85c4ec8bafb1
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Evidence_0: -1253571219821158028
-      Evidence_1: -552427264230617045
-      Evidence_2: -4614713277838548562
-      Evidence_3: 5821108066636963852
+      play2_0: 509847122748298439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
