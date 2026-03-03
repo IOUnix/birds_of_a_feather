@@ -11,11 +11,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private GameObject playerSelection;
 
-
     private static bool _skipStartScreenOnce = false;
 
+    // Persist selection across scene reloads
+    private static int _selectedIndexPersist = 0;
+
     [Header("Selection")]
-    [SerializeField] private GameObject[] playerVariants; // 6 player sprite GOs (children of gameplayContainer)
+    [SerializeField] private GameObject[] playerVariants; // 6 player sprite GOs
     public int SelectedIndex { get; private set; } = 0;
 
     private void Awake()
@@ -26,10 +28,17 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
+
+        // Restore persisted selection on new scene load
+        SelectedIndex = _selectedIndexPersist;
     }
 
     private void Start()
     {
+        playerSelection.SetActive(false);
+        gameplayContainer.SetActive(false);
+        startScreen.SetActive(true);
+
         if (_skipStartScreenOnce)
         {
             _skipStartScreenOnce = false;
@@ -38,8 +47,7 @@ public class GameManager : MonoBehaviour
             gameOverScreen.SetActive(false);
             gameplayContainer.SetActive(true);
 
-            ApplyPlayerVariant(); // ensure correct character is active
-
+            ApplyPlayerVariant();
             Time.timeScale = 1f;
         }
         else
@@ -62,33 +70,34 @@ public class GameManager : MonoBehaviour
         gameOverScreen.SetActive(false);
         gameplayContainer.SetActive(true);
 
-        ApplyPlayerVariant(); // ensure correct character is active
-
+        ApplyPlayerVariant();
         Time.timeScale = 1f;
     }
 
     public void GameOver()
     {
-        _gameOverCanvas.SetActive(true);
+        gameOverScreen.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void RestartGame()
     {
         _skipStartScreenOnce = true;
-        Time.timeScale = 1f; // important
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    // Hook each UI button to this and pass 0..5
     public void SelectCharacter(int index)
     {
         if (playerVariants == null || playerVariants.Length == 0) return;
 
         SelectedIndex = Mathf.Clamp(index, 0, playerVariants.Length - 1);
+        _selectedIndexPersist = SelectedIndex; // <-- this is the key line
 
-        // If gameplay is already visible, switch immediately
+        RestartGame();
         ApplyPlayerVariant();
+
+        playerSelection.SetActive(false);
     }
 
     private void ApplyPlayerVariant()
@@ -96,9 +105,7 @@ public class GameManager : MonoBehaviour
         if (playerVariants == null || playerVariants.Length == 0) return;
 
         for (int i = 0; i < playerVariants.Length; i++)
-        {
             if (playerVariants[i] != null)
                 playerVariants[i].SetActive(i == SelectedIndex);
-        }
     }
 }
