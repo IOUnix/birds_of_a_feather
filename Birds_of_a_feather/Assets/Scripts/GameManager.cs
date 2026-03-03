@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,8 +9,24 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject startScreen;
     [SerializeField] private GameObject gameplayContainer;
     [SerializeField] private GameObject gameOverScreen;
+    [SerializeField] private GameObject playerSelection;
+
 
     private static bool _skipStartScreenOnce = false;
+
+    [Header("Selection")]
+    [SerializeField] private GameObject[] playerVariants; // 6 player sprite GOs (children of gameplayContainer)
+    public int SelectedIndex { get; private set; } = 0;
+
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+    }
 
     private void Start()
     {
@@ -24,6 +38,8 @@ public class GameManager : MonoBehaviour
             gameOverScreen.SetActive(false);
             gameplayContainer.SetActive(true);
 
+            ApplyPlayerVariant(); // ensure correct character is active
+
             Time.timeScale = 1f;
         }
         else
@@ -34,12 +50,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Awake()
+    public void CharacterBoard()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
+        startScreen.SetActive(false);
+        playerSelection.SetActive(true);
     }
 
     public void Play()
@@ -47,19 +61,44 @@ public class GameManager : MonoBehaviour
         startScreen.SetActive(false);
         gameOverScreen.SetActive(false);
         gameplayContainer.SetActive(true);
+
+        ApplyPlayerVariant(); // ensure correct character is active
+
         Time.timeScale = 1f;
     }
 
     public void GameOver()
     {
         _gameOverCanvas.SetActive(true);
-
         Time.timeScale = 0f;
     }
+
     public void RestartGame()
     {
         _skipStartScreenOnce = true;
         Time.timeScale = 1f; // important
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    // Hook each UI button to this and pass 0..5
+    public void SelectCharacter(int index)
+    {
+        if (playerVariants == null || playerVariants.Length == 0) return;
+
+        SelectedIndex = Mathf.Clamp(index, 0, playerVariants.Length - 1);
+
+        // If gameplay is already visible, switch immediately
+        ApplyPlayerVariant();
+    }
+
+    private void ApplyPlayerVariant()
+    {
+        if (playerVariants == null || playerVariants.Length == 0) return;
+
+        for (int i = 0; i < playerVariants.Length; i++)
+        {
+            if (playerVariants[i] != null)
+                playerVariants[i].SetActive(i == SelectedIndex);
+        }
     }
 }
