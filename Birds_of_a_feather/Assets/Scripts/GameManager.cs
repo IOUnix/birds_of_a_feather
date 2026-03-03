@@ -35,48 +35,63 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        playerSelection.SetActive(false);
-        gameplayContainer.SetActive(false);
-        startScreen.SetActive(true);
+        // Default visibility
+        if (playerSelection != null) playerSelection.SetActive(false);
+        if (gameplayContainer != null) gameplayContainer.SetActive(false);
+        if (startScreen != null) startScreen.SetActive(true);
+
+        // Ensure correct character is active immediately (even before Play)
+        ApplyPlayerVariant();
 
         if (_skipStartScreenOnce)
         {
             _skipStartScreenOnce = false;
 
-            startScreen.SetActive(false);
-            gameOverScreen.SetActive(false);
-            gameplayContainer.SetActive(true);
+            if (startScreen != null) startScreen.SetActive(false);
+            if (gameOverScreen != null) gameOverScreen.SetActive(false);
+            if (_gameOverCanvas != null) _gameOverCanvas.SetActive(false);
 
-            ApplyPlayerVariant();
+            if (gameplayContainer != null) gameplayContainer.SetActive(true);
+
             Time.timeScale = 1f;
         }
         else
         {
             Time.timeScale = 0f;
-            startScreen.SetActive(true);
-            gameplayContainer.SetActive(false);
+            if (startScreen != null) startScreen.SetActive(true);
+            if (gameplayContainer != null) gameplayContainer.SetActive(false);
         }
     }
 
     public void CharacterBoard()
     {
-        startScreen.SetActive(false);
-        playerSelection.SetActive(true);
+        // Show selection board from start screen
+        if (startScreen != null) startScreen.SetActive(false);
+        if (gameOverScreen != null) gameOverScreen.SetActive(false);
+        if (_gameOverCanvas != null) _gameOverCanvas.SetActive(false);
+
+        if (playerSelection != null) playerSelection.SetActive(true);
+
+        Time.timeScale = 0f;
     }
 
     public void Play()
     {
-        startScreen.SetActive(false);
-        gameOverScreen.SetActive(false);
-        gameplayContainer.SetActive(true);
+        if (startScreen != null) startScreen.SetActive(false);
+        if (gameOverScreen != null) gameOverScreen.SetActive(false);
+        if (_gameOverCanvas != null) _gameOverCanvas.SetActive(false);
+
+        if (playerSelection != null) playerSelection.SetActive(false);
+        if (gameplayContainer != null) gameplayContainer.SetActive(true);
 
         ApplyPlayerVariant();
+
         Time.timeScale = 1f;
     }
 
     public void GameOver()
     {
-        gameOverScreen.SetActive(true);
+        if (gameOverScreen != null) gameOverScreen.SetActive(true);
         Time.timeScale = 0f;
     }
 
@@ -92,12 +107,13 @@ public class GameManager : MonoBehaviour
         if (playerVariants == null || playerVariants.Length == 0) return;
 
         SelectedIndex = Mathf.Clamp(index, 0, playerVariants.Length - 1);
-        _selectedIndexPersist = SelectedIndex; // <-- this is the key line
+        _selectedIndexPersist = SelectedIndex;
 
+        // Hide selection UI immediately
+        if (playerSelection != null) playerSelection.SetActive(false);
+
+        // Restart so pipes/tokens reset too
         RestartGame();
-        ApplyPlayerVariant();
-
-        playerSelection.SetActive(false);
     }
 
     private void ApplyPlayerVariant()
@@ -105,7 +121,9 @@ public class GameManager : MonoBehaviour
         if (playerVariants == null || playerVariants.Length == 0) return;
 
         for (int i = 0; i < playerVariants.Length; i++)
+        {
             if (playerVariants[i] != null)
                 playerVariants[i].SetActive(i == SelectedIndex);
+        }
     }
 }
