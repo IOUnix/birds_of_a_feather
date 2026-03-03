@@ -149,7 +149,7 @@ TextureImporter:
         serializedVersion: 2
         x: 277
         y: 561
-        width: 256
+        width: 249
         height: 1246
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -175,7 +175,7 @@ TextureImporter:
         height: 1250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 4, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -191,9 +191,9 @@ TextureImporter:
       name: Evidence_3
       rect:
         serializedVersion: 2
-        x: 787
+        x: 793
         y: 402
-        width: 261
+        width: 255
         height: 1412
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
