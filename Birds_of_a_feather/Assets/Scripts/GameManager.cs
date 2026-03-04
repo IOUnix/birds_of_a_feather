@@ -1,5 +1,8 @@
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameplayContainer;
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private GameObject playerSelection;
+    [SerializeField] private GameObject exitScreen;
 
     private static bool _skipStartScreenOnce = false;
 
@@ -73,6 +77,37 @@ public class GameManager : MonoBehaviour
         if (playerSelection != null) playerSelection.SetActive(true);
 
         Time.timeScale = 0f;
+    }
+
+    private void Update()
+    {
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            if (exitScreen.activeSelf)
+            {
+                UnityEngine.Debug.Log("Back/Escape pressed, quitting...");
+                if (playerSelection != null) playerSelection.SetActive(false);
+                if (startScreen != null) startScreen.SetActive(false);
+                if (gameOverScreen != null) gameOverScreen.SetActive(true);
+                if (exitScreen != null) exitScreen.SetActive(false);
+
+            }
+            else
+            {
+                UnityEngine.Debug.Log("Back/Escape pressed, quitting...");
+                if (playerSelection != null) playerSelection.SetActive(false);
+                if (startScreen != null) startScreen.SetActive(false);
+                if (gameOverScreen != null) gameOverScreen.SetActive(false);
+                if (exitScreen != null) exitScreen.SetActive(true);
+            }
+                
+
+        }
+    }
+    public void Quit()
+    {
+        UnityEditor.EditorApplication.isPlaying = false;
+        UnityEngine.Application.Quit();
     }
 
     public void Play()

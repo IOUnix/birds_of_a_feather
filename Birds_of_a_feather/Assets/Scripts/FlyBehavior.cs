@@ -24,14 +24,6 @@ public class FlyBehavior : MonoBehaviour
         {
             _rb.linearVelocity = Vector2.up * _velocity;
         }
-
-        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
-        {
-            Debug.Log("Back/Escape pressed, quitting...");
-
-            UnityEditor.EditorApplication.isPlaying = false;
-            UnityEngine.Application.Quit();
-        }
     }
 
     private void FixedUpdate()
