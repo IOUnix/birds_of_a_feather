@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static System.Net.Mime.MediaTypeNames;
 
 public class FlyBehavior : MonoBehaviour
 {
@@ -22,6 +23,14 @@ public class FlyBehavior : MonoBehaviour
         if (UnityEngine.InputSystem.Pointer.current != null && UnityEngine.InputSystem.Pointer.current.press.wasPressedThisFrame)
         {
             _rb.linearVelocity = Vector2.up * _velocity;
+        }
+
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            Debug.Log("Back/Escape pressed, quitting...");
+
+            UnityEditor.EditorApplication.isPlaying = false;
+            UnityEngine.Application.Quit();
         }
     }
 
