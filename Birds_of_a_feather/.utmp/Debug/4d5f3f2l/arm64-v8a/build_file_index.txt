@@ -1,0 +1,3 @@
+C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
+C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

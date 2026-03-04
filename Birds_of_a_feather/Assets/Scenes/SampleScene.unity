@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6447d6add9d544891e1ec0438a93b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyBehavior
-  _velocity: 1.5
+  _velocity: 1.2
   _rotationSpeed: 10
 --- !u!70 &121095797
 CapsuleCollider2D:
@@ -297,7 +297,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.65
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -399,7 +399,7 @@ Transform:
   m_GameObject: {fileID: 121095795}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -100.6404, y: -787.1029, z: 0}
+  m_LocalPosition: {x: -101.06, y: -787.1029, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 184711020}
   - component: {fileID: 184711019}
   m_Layer: 5
-  m_Name: GameOver
+  m_Name: Busted
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -564,7 +564,7 @@ RectTransform:
   m_GameObject: {fileID: 184711017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.44, y: 1.44, z: 1.44}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1284924944}
@@ -763,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6447d6add9d544891e1ec0438a93b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyBehavior
-  _velocity: 1.5
+  _velocity: 1.2
   _rotationSpeed: 10
 --- !u!70 &411167903
 CapsuleCollider2D:
@@ -817,7 +817,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.65
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -919,7 +919,7 @@ Transform:
   m_GameObject: {fileID: 411167901}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -100.6404, y: -787.1029, z: 0}
+  m_LocalPosition: {x: -101.06, y: -787.1029, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1092,7 +1092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -197.45, y: -611}
+  m_AnchoredPosition: {x: -197.45, y: -641}
   m_SizeDelta: {x: 305.9, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &491457852
@@ -1810,7 +1810,7 @@ RectTransform:
   m_GameObject: {fileID: 992288492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 6.6803412, z: 6.6803412}
+  m_LocalScale: {x: 9.05, y: 6.045709, z: 6.045709}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1439816441}
@@ -1970,7 +1970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6447d6add9d544891e1ec0438a93b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyBehavior
-  _velocity: 1.5
+  _velocity: 1.2
   _rotationSpeed: 10
 --- !u!70 &1101524695
 CapsuleCollider2D:
@@ -2024,7 +2024,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.65
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2126,7 +2126,7 @@ Transform:
   m_GameObject: {fileID: 1101524693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -100.6404, y: -787.1029, z: 0}
+  m_LocalPosition: {x: -101.06, y: -787.1029, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2411,7 +2411,7 @@ Transform:
   m_GameObject: {fileID: 1236013793}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -100.6404, y: -787.1029, z: 0}
+  m_LocalPosition: {x: -101.06, y: -787.1029, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2469,7 +2469,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.65
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2493,7 +2493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6447d6add9d544891e1ec0438a93b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyBehavior
-  _velocity: 1.5
+  _velocity: 1.2
   _rotationSpeed: 10
 --- !u!1 &1251179832
 GameObject:
@@ -2677,7 +2677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1284924941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2828,7 +2828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6447d6add9d544891e1ec0438a93b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyBehavior
-  _velocity: 1.5
+  _velocity: 1.2
   _rotationSpeed: 10
 --- !u!70 &1326690445
 CapsuleCollider2D:
@@ -2882,7 +2882,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.65
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2984,7 +2984,7 @@ Transform:
   m_GameObject: {fileID: 1326690443}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -100.6404, y: -787.1029, z: 0}
+  m_LocalPosition: {x: -101.06, y: -787.1029, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3402,7 +3402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6447d6add9d544891e1ec0438a93b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyBehavior
-  _velocity: 1.5
+  _velocity: 1.2
   _rotationSpeed: 10
 --- !u!70 &1638245155
 CapsuleCollider2D:
@@ -3456,7 +3456,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.65
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3558,7 +3558,7 @@ Transform:
   m_GameObject: {fileID: 1638245153}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -100.6404, y: -787.1029, z: 0}
+  m_LocalPosition: {x: -101.06, y: -787.1029, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4365,14 +4365,14 @@ RectTransform:
   m_GameObject: {fileID: 1912514170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.4, y: 1.5181395, z: 3.4}
+  m_LocalScale: {x: 4.95, y: 2.2102325, z: 4.95}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1284924944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 458.7}
+  m_AnchoredPosition: {x: 0, y: 506.7}
   m_SizeDelta: {x: 89, y: 91.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1912514172
@@ -4814,7 +4814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6447d6add9d544891e1ec0438a93b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyBehavior
-  _velocity: 1.5
+  _velocity: 1.2
   _rotationSpeed: 10
 --- !u!70 &2116038071
 CapsuleCollider2D:
@@ -4868,7 +4868,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.65
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4970,7 +4970,7 @@ Transform:
   m_GameObject: {fileID: 2116038069}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -100.6404, y: -787.1029, z: 0}
+  m_LocalPosition: {x: -101.06, y: -787.1029, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5010,7 +5010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 149.97}
+  m_AnchoredPosition: {x: 0, y: 250}
   m_SizeDelta: {x: 89, y: 91.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2129607047

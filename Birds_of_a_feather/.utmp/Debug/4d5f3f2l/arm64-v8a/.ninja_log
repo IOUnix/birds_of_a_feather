@@ -1,0 +1,12 @@
+# ninja log v5
+148	1185	7942826583830428	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d8fe40bc694ccce1
+1189	1525	7942826586883764	C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/4d5f3f2l/obj/arm64-v8a/libswappywrapper.so	6895729b809c4373
+85	3255	7942826604303190	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a733905452697a3c
+29	3268	7942826604427398	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	52747fe206cc48dd
+42	3275	7942826604623208	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	e02075e783e8671f
+2	3284	7942826604688046	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	fd9b1dfb6e03a917
+103	3326	7942826605144538	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	2d0fc1ea582a55ef
+53	3543	7942826607301286	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	bc70c7c0baba3d30
+12	3593	7942826607838427	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	194421b26716297d
+119	3610	7942826608024779	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	1f7ee91a3b7ba514
+3610	3734	7942826609282498	C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/4d5f3f2l/obj/arm64-v8a/libgame.so	ac97f61cd3486892
