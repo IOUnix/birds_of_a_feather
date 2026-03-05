@@ -116,7 +116,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\FlyBehavior.cs",
               "ToolTip": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\FlyBehavior.cs",
               "RelativeToolTip": "Assets\\Scripts\\FlyBehavior.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-27T22:14:15.146Z",
               "EditorCaption": ""
@@ -129,9 +129,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAIAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T22:12:45.302Z"
+              "WhenOpened": "2026-02-27T22:12:45.302Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

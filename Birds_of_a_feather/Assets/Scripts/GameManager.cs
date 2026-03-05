@@ -1,7 +1,8 @@
 using System.Diagnostics;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using static System.Net.Mime.MediaTypeNames;
 
 
 public class GameManager : MonoBehaviour
@@ -106,7 +107,10 @@ public class GameManager : MonoBehaviour
     }
     public void Quit()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+
         UnityEngine.Application.Quit();
     }
 

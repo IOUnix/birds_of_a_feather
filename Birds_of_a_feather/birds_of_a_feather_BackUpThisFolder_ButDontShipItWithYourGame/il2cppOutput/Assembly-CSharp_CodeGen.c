@@ -17,6 +17,8 @@ extern void GameManager_set_SelectedIndex_m5EA0F7062F107F645C4B9D25A00DC233BD101
 extern void GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F (void);
 extern void GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2 (void);
 extern void GameManager_CharacterBoard_mA3F044EC6C982DB65582F6AF6C5E34C40F060832 (void);
+extern void GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41 (void);
+extern void GameManager_Quit_mD4E439BAC10B04E13E09995F0194D55A519974ED (void);
 extern void GameManager_Play_m60DDAE5B98EDCA3C57FC90D32241B377FD50B160 (void);
 extern void GameManager_GameOver_mF1BD400E7F84A0B533A58E80ADA7CCB89C964625 (void);
 extern void GameManager_RestartGame_m03813C863F1F1ABB9DC30BC371E2F088D7B01F75 (void);
@@ -313,7 +315,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[306] = 
+static Il2CppMethodPointer s_methodPointers[308] = 
 {
 	FlyBehavior_Start_m77B5C3E9774CFFFED333384DF554DF47F45975D6,
 	FlyBehavior_Update_m6C05061F080D991E92E3F94240BA42FFE3E92F59,
@@ -325,6 +327,8 @@ static Il2CppMethodPointer s_methodPointers[306] =
 	GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F,
 	GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2,
 	GameManager_CharacterBoard_mA3F044EC6C982DB65582F6AF6C5E34C40F060832,
+	GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41,
+	GameManager_Quit_mD4E439BAC10B04E13E09995F0194D55A519974ED,
 	GameManager_Play_m60DDAE5B98EDCA3C57FC90D32241B377FD50B160,
 	GameManager_GameOver_mF1BD400E7F84A0B533A58E80ADA7CCB89C964625,
 	GameManager_RestartGame_m03813C863F1F1ABB9DC30BC371E2F088D7B01F75,
@@ -622,7 +626,7 @@ static Il2CppMethodPointer s_methodPointers[306] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[306] = 
+static const int32_t s_InvokerIndices[308] = 
 {
 	17010,
 	17010,
@@ -631,6 +635,8 @@ static const int32_t s_InvokerIndices[306] =
 	17010,
 	16707,
 	12482,
+	17010,
+	17010,
 	17010,
 	17010,
 	17010,
@@ -935,7 +941,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	306,
+	308,
 	s_methodPointers,
 	0,
 	NULL,

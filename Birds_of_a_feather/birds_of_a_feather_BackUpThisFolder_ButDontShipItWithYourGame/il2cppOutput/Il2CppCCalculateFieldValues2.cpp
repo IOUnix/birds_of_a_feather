@@ -34617,6 +34617,7 @@ struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehav
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameplayContainer;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameOverScreen;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___playerSelection;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___exitScreen;
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___playerVariants;
 	int32_t ___U3CSelectedIndexU3Ek__BackingField;
 };
@@ -44791,9 +44792,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8224[9] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8227[3] = 
 {
 	static_cast<int32_t>(offsetof(FlyBehavior_t18AB4617251AF4C09CA0E045589AAD4DF5693681, ____velocity)),static_cast<int32_t>(offsetof(FlyBehavior_t18AB4617251AF4C09CA0E045589AAD4DF5693681, ____rotationSpeed)),static_cast<int32_t>(offsetof(FlyBehavior_t18AB4617251AF4C09CA0E045589AAD4DF5693681, ____rb)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8228[10] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8228[11] = 
 {
-	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields, ___instance)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ____gameOverCanvas)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___startScreen)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___gameplayContainer)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___gameOverScreen)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___playerSelection)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields, ____skipStartScreenOnce)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields, ____selectedIndexPersist)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___playerVariants)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___U3CSelectedIndexU3Ek__BackingField)),};
+	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields, ___instance)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ____gameOverCanvas)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___startScreen)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___gameplayContainer)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___gameOverScreen)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___playerSelection)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___exitScreen)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields, ____skipStartScreenOnce)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields, ____selectedIndexPersist)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___playerVariants)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___U3CSelectedIndexU3Ek__BackingField)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8229[4] = 
 {
 	static_cast<int32_t>(offsetof(GroundScroller_t9F9E2784B2B4C22B61041F739027ACF54C74FCE5, ___tiles)),static_cast<int32_t>(offsetof(GroundScroller_t9F9E2784B2B4C22B61041F739027ACF54C74FCE5, ___speed)),static_cast<int32_t>(offsetof(GroundScroller_t9F9E2784B2B4C22B61041F739027ACF54C74FCE5, ___loopWidth)),static_cast<int32_t>(offsetof(GroundScroller_t9F9E2784B2B4C22B61041F739027ACF54C74FCE5, ___wrapX)),};
