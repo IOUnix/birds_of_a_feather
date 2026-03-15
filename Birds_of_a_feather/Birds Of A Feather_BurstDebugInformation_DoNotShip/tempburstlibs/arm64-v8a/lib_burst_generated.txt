@@ -10,7 +10,6 @@ Library: C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Temp\BurstOutput
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Library\Burst
 --output=C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
@@ -129,7 +128,6 @@ Library: C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Temp\BurstOutput
 --float-mode=Fast
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Library\Burst
 --output=C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
@@ -148,7 +146,6 @@ Library: C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Temp\BurstOutput
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Library\Burst
 --output=C:\Programming\Unity\Epstein Island\Birds_of_a_feather\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
