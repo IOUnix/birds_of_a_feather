@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &804666291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804666293}
+  - component: {fileID: 804666292}
+  m_Layer: 0
+  m_Name: RemoteConfigManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &804666292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804666291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b2522ef6446ca44c820e03a3f4bd66a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RemoteConfigManager
+  configUrl: https://littlesaintgames.com/game-config.json
+  showRemoteCongifOverlay: 0
+--- !u!4 &804666293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804666291}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 256.37497, y: 456, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1488750564
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,8 +229,6 @@ MonoBehaviour:
   analyticsUrl: https://birds-analytics-worker.littlesaintgames.workers.dev/analytics
   gameApiToken: QXoYTEa1QZdf5QmeCKriUmREJRJHnnWQ
   impressionIntervalSeconds: 60
-  bannerPosition: bottom
-  adsEnabled: 0
   retryEverySeconds: 15
   maxEventsPerFlush: 10
 --- !u!1 &2027186557
@@ -237,3 +281,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 1488750566}
   - {fileID: 2027186559}
+  - {fileID: 804666293}

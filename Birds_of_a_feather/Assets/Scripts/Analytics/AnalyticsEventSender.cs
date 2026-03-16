@@ -17,8 +17,7 @@ public class AnalyticsEventSender : MonoBehaviour
 
     [Header("Banner Tracking")]
     [SerializeField] private float impressionIntervalSeconds = 60f;
-    [SerializeField] private string bannerPosition = "top";
-    [SerializeField] private bool adsEnabled = false;
+
 
     [Header("Retry")]
     [SerializeField] private float retryEverySeconds = 15f;
@@ -333,8 +332,8 @@ public class AnalyticsEventSender : MonoBehaviour
             session_id = sessionId,
             timestamp_utc = DateTime.UtcNow.ToString("o"),
             app_version = UnityEngine.Application.version,
-            banner_position = bannerPosition,
-            ads_enabled = adsEnabled,
+            banner_position = GetBannerPosition(),
+            ads_enabled = GetAdsEnabled(),
             device_model = SystemInfo.deviceModel,
             device_os = SystemInfo.operatingSystem,
             session_length_seconds = 0f
@@ -528,11 +527,29 @@ public class AnalyticsEventSender : MonoBehaviour
             "App Paused: " + appPaused + "\n" +
             "App Focused: " + appFocused + "\n" +
             "Banner Visible: " + bannerShouldBeVisible + "\n" +
+            "Config Ads Enabled: " + GetAdsEnabled() + "\n" +
+            "Config Banner Position: " + GetBannerPosition() + "\n" +
             "Session Timer Running: " + sessionTimerRunning + "\n" +
             "Banner Timer Running: " + bannerTimerRunning + "\n" +
             "App Version: " + UnityEngine.Application.version + "\n" +
             "Queue Path:\n" + QueuePath;
 
         GUI.Box(new Rect(20, 460, 950, 450), text, style);
+    }
+
+    private bool GetAdsEnabled()
+    {
+        if (RemoteConfigManager.Instance == null)
+            return false;
+
+        return RemoteConfigManager.Instance.AdsEnabled;
+    }
+
+    private string GetBannerPosition()
+    {
+        if (RemoteConfigManager.Instance == null)
+            return "bottom";
+
+        return RemoteConfigManager.Instance.BannerPosition;
     }
 }

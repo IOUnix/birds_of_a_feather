@@ -38,6 +38,12 @@ public class AudioManager : MonoBehaviour
         ApplyMuteState();
     }
 
+    public void ButtonTest()
+    {
+        UnityEngine.Debug.Log("Toggle");
+
+    }
+
     private void ApplyMuteState()
     {
         musicSource.mute = IsMuted;

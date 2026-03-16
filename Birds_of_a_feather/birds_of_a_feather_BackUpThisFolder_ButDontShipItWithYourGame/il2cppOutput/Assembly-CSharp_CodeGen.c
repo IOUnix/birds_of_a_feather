@@ -67,6 +67,8 @@ extern void U3CSendEventU3Ed__53_U3CU3Em__Finally1_mA05BA2E2CC20B1A5E40A34FCD912
 extern void U3CSendEventU3Ed__53_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB19C2E01CE75808C0119587E7CAB8B426D170A09 (void);
 extern void U3CSendEventU3Ed__53_System_Collections_IEnumerator_Reset_m1F9FE6EA525C62E9DD6179C798479EFCE1414F79 (void);
 extern void U3CSendEventU3Ed__53_System_Collections_IEnumerator_get_Current_m1B172F03B3B9C44B8DC8AD261039040553D4E88E (void);
+extern void BootLoader_Start_m9B98F86C5C782F8CA0DD8B48B287F88CCE92D458 (void);
+extern void BootLoader__ctor_mDA941227BE81F9EBAC752A4FCCF344AD1664104C (void);
 extern void FakeBannerTracker_get_SavePath_mE03BA04AFF3C72C2785571D1B24487BD9185A16F (void);
 extern void FakeBannerTracker_Awake_m6CC20967AF38C37CAB84EA19E67773FEEAAD6AF7 (void);
 extern void FakeBannerTracker_Update_m80DEE459E2915FFE5C39766A8BF7538400472C7E (void);
@@ -407,7 +409,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[400] = 
+static Il2CppMethodPointer s_methodPointers[402] = 
 {
 	AnalyticsEventSender_get_QueuePath_m863C85B85122ECE647A52C51FAA43C2687C0D017,
 	AnalyticsEventSender_Awake_mC43D7CEF82395AA96A0FFE0D0DFA340C5F06B814,
@@ -469,6 +471,8 @@ static Il2CppMethodPointer s_methodPointers[400] =
 	U3CSendEventU3Ed__53_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB19C2E01CE75808C0119587E7CAB8B426D170A09,
 	U3CSendEventU3Ed__53_System_Collections_IEnumerator_Reset_m1F9FE6EA525C62E9DD6179C798479EFCE1414F79,
 	U3CSendEventU3Ed__53_System_Collections_IEnumerator_get_Current_m1B172F03B3B9C44B8DC8AD261039040553D4E88E,
+	BootLoader_Start_m9B98F86C5C782F8CA0DD8B48B287F88CCE92D458,
+	BootLoader__ctor_mDA941227BE81F9EBAC752A4FCCF344AD1664104C,
 	FakeBannerTracker_get_SavePath_mE03BA04AFF3C72C2785571D1B24487BD9185A16F,
 	FakeBannerTracker_Awake_m6CC20967AF38C37CAB84EA19E67773FEEAAD6AF7,
 	FakeBannerTracker_Update_m80DEE459E2915FFE5C39766A8BF7538400472C7E,
@@ -810,7 +814,7 @@ static Il2CppMethodPointer s_methodPointers[400] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[400] = 
+static const int32_t s_InvokerIndices[402] = 
 {
 	15087,
 	15322,
@@ -872,6 +876,8 @@ static const int32_t s_InvokerIndices[400] =
 	15087,
 	15322,
 	15087,
+	15322,
+	15322,
 	15087,
 	15322,
 	15322,
@@ -885,18 +891,18 @@ static const int32_t s_InvokerIndices[400] =
 	15322,
 	15322,
 	15322,
-	26801,
-	25602,
+	26802,
+	25603,
 	14888,
 	11329,
-	25602,
-	25602,
+	25603,
+	25603,
 	15322,
 	15322,
 	15322,
 	15322,
 	15087,
-	26901,
+	26902,
 	15322,
 	15322,
 	15322,
@@ -960,7 +966,7 @@ static const int32_t s_InvokerIndices[400] =
 	15087,
 	15322,
 	15087,
-	26927,
+	26928,
 	15322,
 	2166,
 	15322,
@@ -1080,7 +1086,7 @@ static const int32_t s_InvokerIndices[400] =
 	15087,
 	15087,
 	15322,
-	26901,
+	26902,
 	11464,
 	15322,
 	14888,
@@ -1217,7 +1223,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	400,
+	402,
 	s_methodPointers,
 	0,
 	NULL,
