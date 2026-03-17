@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\AnalyticsEventSender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Analytics\\AnalyticsEventSender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\BootLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Analytics\\BootLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\FakeBannerTracker1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Analytics\\FakeBannerTracker1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\FakeBannerTracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Analytics\\FakeBannerTracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -62,11 +74,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BootLoader.cs",
+              "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\BootLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Analytics\\BootLoader.cs",
+              "ToolTip": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\BootLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Analytics\\BootLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T23:40:21.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FakeBannerTracker1.cs",
+              "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\FakeBannerTracker1.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Analytics\\FakeBannerTracker1.cs",
+              "ToolTip": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\FakeBannerTracker1.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Analytics\\FakeBannerTracker1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T23:40:01.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AnalyticsEventSender.cs",
+              "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\AnalyticsEventSender.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Analytics\\AnalyticsEventSender.cs",
+              "ToolTip": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\AnalyticsEventSender.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Analytics\\AnalyticsEventSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T20:56:12.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FakeBannerTracker.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Analytics\\FakeBannerTracker.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Analytics\\FakeBannerTracker.cs",
@@ -79,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "MuteIcons.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\MuteIcons.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MuteIcons.cs",
@@ -91,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
@@ -103,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "MovePipe.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\MovePipe.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MovePipe.cs",
@@ -115,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "PipeTokenSelector.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\PipeTokenSelector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PipeTokenSelector.cs",
@@ -127,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "pipeVariantSelector.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\pipeVariantSelector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\pipeVariantSelector.cs",
@@ -139,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "PipeSpawner.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\PipeSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PipeSpawner.cs",
@@ -151,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "GroundScroller.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\GroundScroller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GroundScroller.cs",
@@ -163,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "LoopGround.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\LoopGround.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LoopGround.cs",
@@ -175,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "FlyBehavior.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\FlyBehavior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FlyBehavior.cs",
@@ -187,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -199,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Score.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\Score.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Score.cs",
@@ -211,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PipeIncreaseScore.cs",
               "DocumentMoniker": "C:\\Programming\\Unity\\Epstein Island\\Birds_of_a_feather\\Assets\\Scripts\\PipeIncreaseScore.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PipeIncreaseScore.cs",
@@ -219,8 +270,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PipeIncreaseScore.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T18:20:25.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T18:20:25.003Z"
             }
           ]
         }

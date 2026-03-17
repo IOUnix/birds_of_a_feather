@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RemoteConfigManager
   configUrl: https://littlesaintgames.com/game-config.json
-  showRemoteCongifOverlay: 1
+  showRemoteConfigOverlay: 0
 --- !u!4 &804666293
 Transform:
   m_ObjectHideFlags: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc60b3cbefd3b6147bc658673319802f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AdManager
-  androidBannerAdUnitId: ca-app-pub-3940256099942544/9214589741
+  androidBannerAdUnitId: ca-app-pub-6181748833856337/7265994615
 --- !u!4 &1531921598
 Transform:
   m_ObjectHideFlags: 0
