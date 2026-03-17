@@ -7,10 +7,11 @@ using UnityEngine.Networking;
 public class RemoteConfigManager : MonoBehaviour
 {
     public static RemoteConfigManager Instance { get; private set; }
+    public event Action OnConfigUpdated;
 
     [Header("Remote Config")]
     [SerializeField] private string configUrl = "https://littlesaintgames.com/game-config.json";
-    [SerializeField] private bool showRemoteCongifOverlay = false;
+    [SerializeField] private bool showRemoteConfigOverlay = false;
 
     [Serializable]
     public class GameConfig
@@ -55,7 +56,12 @@ public class RemoteConfigManager : MonoBehaviour
                 if (cached != null)
                 {
                     CurrentConfig = NormalizeConfig(cached);
-                    UnityEngine.Debug.Log("[RemoteConfig] Loaded cached config.");
+                    UnityEngine.Debug.Log(
+                        $"[RemoteConfig] Loaded cached config | ads_enabled={CurrentConfig.ads_enabled} | " +
+                        $"banner_position={CurrentConfig.banner_position} | offended={CurrentConfig.offended}"
+                    );
+
+                    OnConfigUpdated?.Invoke();
                     return;
                 }
             }
@@ -65,8 +71,14 @@ public class RemoteConfigManager : MonoBehaviour
             }
         }
 
-        CurrentConfig = new GameConfig();
-        UnityEngine.Debug.Log("[RemoteConfig] Using built-in default config.");
+        CurrentConfig = NormalizeConfig(new GameConfig());
+
+        UnityEngine.Debug.Log(
+            $"[RemoteConfig] Using built-in default config | ads_enabled={CurrentConfig.ads_enabled} | " +
+            $"banner_position={CurrentConfig.banner_position} | offended={CurrentConfig.offended}"
+        );
+
+        OnConfigUpdated?.Invoke();
     }
 
     private IEnumerator FetchRemoteConfig()
@@ -112,6 +124,8 @@ public class RemoteConfigManager : MonoBehaviour
             $"[RemoteConfig] Updated from server | ads_enabled={CurrentConfig.ads_enabled} | " +
             $"banner_position={CurrentConfig.banner_position} | offended={CurrentConfig.offended}"
         );
+
+        OnConfigUpdated?.Invoke();
     }
 
     private GameConfig NormalizeConfig(GameConfig config)
@@ -148,7 +162,7 @@ public class RemoteConfigManager : MonoBehaviour
 
     private void OnGUI()
     {
-        if (!showRemoteCongifOverlay)
+        if (!showRemoteConfigOverlay)
             return;
 
         GUIStyle style = new GUIStyle(GUI.skin.box);

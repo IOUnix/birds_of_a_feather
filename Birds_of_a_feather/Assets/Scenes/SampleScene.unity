@@ -1277,6 +1277,7 @@ GameObject:
   - component: {fileID: 491457854}
   - component: {fileID: 491457853}
   - component: {fileID: 491457852}
+  - component: {fileID: 491457855}
   m_Layer: 5
   m_Name: Offended
   m_TagString: Untagged
@@ -1347,9 +1348,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1270863734}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: ToggleMusic
+      - m_Target: {fileID: 491457855}
+        m_TargetAssemblyTypeName: OffendedButton, Assembly-CSharp
+        m_MethodName: OpenOffendedPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1397,6 +1398,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491457850}
   m_CullTransparentMesh: 1
+--- !u!114 &491457855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491457850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8b2609a43d08d49ae87bf4c75a5c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OffendedButton
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
