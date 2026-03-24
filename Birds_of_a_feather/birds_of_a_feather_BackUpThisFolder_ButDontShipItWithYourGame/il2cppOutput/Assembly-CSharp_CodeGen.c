@@ -131,6 +131,12 @@ extern void U3CFetchRemoteConfigU3Ed__19_U3CU3Em__Finally1_mB2BD2C882A8079095765
 extern void U3CFetchRemoteConfigU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEE57F9927D443D995209D0AFD70639505B6446C2 (void);
 extern void U3CFetchRemoteConfigU3Ed__19_System_Collections_IEnumerator_Reset_m9B81D861E78B35CD5B51A2ED27CE22CACD6472CA (void);
 extern void U3CFetchRemoteConfigU3Ed__19_System_Collections_IEnumerator_get_Current_m7FB164BBCABCBEDD8E29D0A433900827FD2DD8FD (void);
+extern void HybridAspectLimiter_get_CurrentEffectiveAspect_m7E9C1B53B1B3EE7CB85E57CEDFDAD6DFC8D37D6A (void);
+extern void HybridAspectLimiter_set_CurrentEffectiveAspect_m70F871B79302161CF7C0777C527E0A9A48B05B66 (void);
+extern void HybridAspectLimiter_Awake_mCD63E02AD8821D5202C6F968D57C82383FECA56B (void);
+extern void HybridAspectLimiter_Update_m4612C531CCE5870A2FA92EEFFC533849E2429A32 (void);
+extern void HybridAspectLimiter_Apply_m27517B03A0B1FB05198DDC5CD2A9CCA6F70D5E95 (void);
+extern void HybridAspectLimiter__ctor_m957DA219C980C2D48ECD4C4274651436EC792658 (void);
 extern void AudioManager_get_Instance_mE470515848AEDD204D9C8CF0F50D6A9785890211 (void);
 extern void AudioManager_set_Instance_m6F8BEEDBDA8BADCA733A3B1B697331DCCE5CE33D (void);
 extern void AudioManager_get_IsMuted_m8FD637424BD92D2CE6B3F0B7DFD9D80EEFB4BBF7 (void);
@@ -461,7 +467,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[454] = 
+static Il2CppMethodPointer s_methodPointers[460] = 
 {
 	AdManager_get_Instance_mBD2ED673F94186A03E26D8A8778E4B41A93696B3,
 	AdManager_set_Instance_m414B39F57181E87540E32D7052FFA5B44417804F,
@@ -587,6 +593,12 @@ static Il2CppMethodPointer s_methodPointers[454] =
 	U3CFetchRemoteConfigU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEE57F9927D443D995209D0AFD70639505B6446C2,
 	U3CFetchRemoteConfigU3Ed__19_System_Collections_IEnumerator_Reset_m9B81D861E78B35CD5B51A2ED27CE22CACD6472CA,
 	U3CFetchRemoteConfigU3Ed__19_System_Collections_IEnumerator_get_Current_m7FB164BBCABCBEDD8E29D0A433900827FD2DD8FD,
+	HybridAspectLimiter_get_CurrentEffectiveAspect_m7E9C1B53B1B3EE7CB85E57CEDFDAD6DFC8D37D6A,
+	HybridAspectLimiter_set_CurrentEffectiveAspect_m70F871B79302161CF7C0777C527E0A9A48B05B66,
+	HybridAspectLimiter_Awake_mCD63E02AD8821D5202C6F968D57C82383FECA56B,
+	HybridAspectLimiter_Update_m4612C531CCE5870A2FA92EEFFC533849E2429A32,
+	HybridAspectLimiter_Apply_m27517B03A0B1FB05198DDC5CD2A9CCA6F70D5E95,
+	HybridAspectLimiter__ctor_m957DA219C980C2D48ECD4C4274651436EC792658,
 	AudioManager_get_Instance_mE470515848AEDD204D9C8CF0F50D6A9785890211,
 	AudioManager_set_Instance_m6F8BEEDBDA8BADCA733A3B1B697331DCCE5CE33D,
 	AudioManager_get_IsMuted_m8FD637424BD92D2CE6B3F0B7DFD9D80EEFB4BBF7,
@@ -918,7 +930,7 @@ static Il2CppMethodPointer s_methodPointers[454] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[454] = 
+static const int32_t s_InvokerIndices[460] = 
 {
 	26847,
 	25647,
@@ -1044,6 +1056,12 @@ static const int32_t s_InvokerIndices[454] =
 	15118,
 	15353,
 	15118,
+	15230,
+	11658,
+	15353,
+	15353,
+	15353,
+	15353,
 	26847,
 	25647,
 	14917,
@@ -1379,7 +1397,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	454,
+	460,
 	s_methodPointers,
 	0,
 	NULL,
