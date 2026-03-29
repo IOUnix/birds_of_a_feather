@@ -4092,10 +4092,8 @@ struct GroundScroller_t9F9E2784B2B4C22B61041F739027ACF54C74FCE5  : public MonoBe
 };
 struct HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	float ___designWidth;
-	float ___designHeight;
-	float ___flexibleWidth;
-	float ___flexibleHeight;
+	float ___targetWidth;
+	float ___targetHeight;
 	float ___designOrthographicSize;
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___cam;
 	float ___lastScreenW;
@@ -6048,9 +6046,9 @@ inline Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Component_GetComponent_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HybridAspectLimiter_Apply_m27517B03A0B1FB05198DDC5CD2A9CCA6F70D5E95 (HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9 (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HybridAspectLimiter_set_CurrentEffectiveAspect_m70F871B79302161CF7C0777C527E0A9A48B05B66_inline (HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_rect_mA81158BC169AF8674DE240AE9460FC5A0EADBB19 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_orthographicSize_m76DD021032ACB3DDBD052B75EC66DCE3A7295A5C (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, float ___0_value, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HybridAspectLimiter_set_CurrentEffectiveAspect_m70F871B79302161CF7C0777C527E0A9A48B05B66_inline (HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* AudioManager_get_Instance_mE470515848AEDD204D9C8CF0F50D6A9785890211_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AudioManager_set_Instance_m6F8BEEDBDA8BADCA733A3B1B697331DCCE5CE33D_inline (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_ApplyMuteState_m956356495CFF73176568AC9FAE26E17758A890AD (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, const RuntimeMethod* method) ;
@@ -12161,7 +12159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFetchRemoteConfigU3Ed__19_S
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HybridAspectLimiter_get_CurrentEffectiveAspect_m7E9C1B53B1B3EE7CB85E57CEDFDAD6DFC8D37D6A (HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:21>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:17>
 		float L_0 = __this->___U3CCurrentEffectiveAspectU3Ek__BackingField;
 		return L_0;
 	}
@@ -12170,7 +12168,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HybridAspectLimiter_get_CurrentEffectiv
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HybridAspectLimiter_set_CurrentEffectiveAspect_m70F871B79302161CF7C0777C527E0A9A48B05B66 (HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:21>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:17>
 		float L_0 = ___0_value;
 		__this->___U3CCurrentEffectiveAspectU3Ek__BackingField = L_0;
 		return;
@@ -12186,14 +12184,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HybridAspectLimiter_Awake_mCD63E02AD8821
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:25>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:21>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0;
 		L_0 = Component_GetComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m64AC6C06DD93C5FB249091FEC84FA8475457CCC4(__this, Component_GetComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m64AC6C06DD93C5FB249091FEC84FA8475457CCC4_RuntimeMethod_var);
 		__this->___cam = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___cam), (void*)L_0);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:26>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:22>
 		HybridAspectLimiter_Apply_m27517B03A0B1FB05198DDC5CD2A9CCA6F70D5E95(__this, NULL);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:27>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:23>
 		return;
 	}
 }
@@ -12201,7 +12199,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HybridAspectLimiter_Awake_mCD63E02AD8821
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HybridAspectLimiter_Update_m4612C531CCE5870A2FA92EEFFC533849E2429A32 (HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:31>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:27>
 		int32_t L_0;
 		L_0 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
 		float L_1 = __this->___lastScreenW;
@@ -12222,13 +12220,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HybridAspectLimiter_Update_m4612C531CCE5
 
 IL_001c:
 	{
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:33>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:29>
 		HybridAspectLimiter_Apply_m27517B03A0B1FB05198DDC5CD2A9CCA6F70D5E95(__this, NULL);
 	}
 
 IL_0022:
 	{
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:35>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:31>
 		return;
 	}
 }
@@ -12242,89 +12240,84 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HybridAspectLimiter_Apply_m27517B03A0B1F
 	float V_4 = 0.0f;
 	float V_5 = 0.0f;
 	{
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:39>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:35>
 		int32_t L_0;
 		L_0 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
 		__this->___lastScreenW = ((float)L_0);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:40>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:36>
 		int32_t L_1;
 		L_1 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
 		__this->___lastScreenH = ((float)L_1);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:42>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:38>
 		int32_t L_2;
 		L_2 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
 		int32_t L_3;
 		L_3 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
 		V_0 = ((float)(((float)L_2)/((float)L_3)));
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:43>
-		float L_4 = __this->___designWidth;
-		float L_5 = __this->___designHeight;
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:39>
+		float L_4 = __this->___targetWidth;
+		float L_5 = __this->___targetHeight;
 		V_1 = ((float)(L_4/L_5));
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:44>
-		float L_6 = __this->___flexibleWidth;
-		float L_7 = __this->___flexibleHeight;
-		V_2 = ((float)(L_6/L_7));
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:47>
-		float L_8 = V_0;
-		float L_9 = V_2;
-		if ((!(((float)L_8) <= ((float)L_9))))
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:41>
+		float L_6 = V_1;
+		HybridAspectLimiter_set_CurrentEffectiveAspect_m70F871B79302161CF7C0777C527E0A9A48B05B66_inline(__this, L_6, NULL);
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:43>
+		float L_7 = V_0;
+		float L_8 = V_1;
+		if ((!(((float)L_7) < ((float)L_8))))
 		{
-			goto IL_0087;
+			goto IL_007f;
 		}
 	}
 	{
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:49>
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_10 = __this->___cam;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_11;
-		memset((&L_11), 0, sizeof(L_11));
-		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_11), (0.0f), (0.0f), (1.0f), (1.0f), NULL);
-		NullCheck(L_10);
-		Camera_set_rect_mA81158BC169AF8674DE240AE9460FC5A0EADBB19(L_10, L_11, NULL);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:52>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:46>
+		float L_9 = V_0;
+		float L_10 = V_1;
+		V_2 = ((float)(L_9/L_10));
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:47>
+		float L_11 = V_2;
+		V_3 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((1.0f), L_11)), (0.5f)));
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:48>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_12 = __this->___cam;
-		float L_13 = __this->___designOrthographicSize;
-		float L_14 = V_1;
-		float L_15 = V_0;
+		float L_13 = V_3;
+		float L_14 = V_2;
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_15;
+		memset((&L_15), 0, sizeof(L_15));
+		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_15), (0.0f), L_13, (1.0f), L_14, NULL);
 		NullCheck(L_12);
-		Camera_set_orthographicSize_m76DD021032ACB3DDBD052B75EC66DCE3A7295A5C(L_12, ((float)il2cpp_codegen_multiply(L_13, ((float)(L_14/L_15)))), NULL);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:54>
-		float L_16 = V_0;
-		HybridAspectLimiter_set_CurrentEffectiveAspect_m70F871B79302161CF7C0777C527E0A9A48B05B66_inline(__this, L_16, NULL);
+		Camera_set_rect_mA81158BC169AF8674DE240AE9460FC5A0EADBB19(L_12, L_15, NULL);
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:49>
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_16 = __this->___cam;
+		float L_17 = __this->___designOrthographicSize;
+		NullCheck(L_16);
+		Camera_set_orthographicSize_m76DD021032ACB3DDBD052B75EC66DCE3A7295A5C(L_16, L_17, NULL);
 		return;
 	}
 
-IL_0087:
+IL_007f:
 	{
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:59>
-		float L_17 = __this->___designOrthographicSize;
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:54>
 		float L_18 = V_1;
-		float L_19 = V_2;
-		V_3 = ((float)il2cpp_codegen_multiply(L_17, ((float)(L_18/L_19))));
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:60>
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_20 = __this->___cam;
-		float L_21 = V_3;
-		NullCheck(L_20);
-		Camera_set_orthographicSize_m76DD021032ACB3DDBD052B75EC66DCE3A7295A5C(L_20, L_21, NULL);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:63>
-		float L_22 = V_2;
-		float L_23 = V_0;
-		V_4 = ((float)(L_22/L_23));
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:64>
-		float L_24 = V_4;
-		V_5 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((1.0f), L_24)), (0.5f)));
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:65>
+		float L_19 = V_0;
+		V_4 = ((float)(L_18/L_19));
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:55>
+		float L_20 = V_4;
+		V_5 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((1.0f), L_20)), (0.5f)));
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:56>
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_21 = __this->___cam;
+		float L_22 = V_5;
+		float L_23 = V_4;
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_24;
+		memset((&L_24), 0, sizeof(L_24));
+		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_24), L_22, (0.0f), L_23, (1.0f), NULL);
+		NullCheck(L_21);
+		Camera_set_rect_mA81158BC169AF8674DE240AE9460FC5A0EADBB19(L_21, L_24, NULL);
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:57>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_25 = __this->___cam;
-		float L_26 = V_5;
-		float L_27 = V_4;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_28;
-		memset((&L_28), 0, sizeof(L_28));
-		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_28), L_26, (0.0f), L_27, (1.0f), NULL);
+		float L_26 = __this->___designOrthographicSize;
 		NullCheck(L_25);
-		Camera_set_rect_mA81158BC169AF8674DE240AE9460FC5A0EADBB19(L_25, L_28, NULL);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:67>
-		float L_29 = V_2;
-		HybridAspectLimiter_set_CurrentEffectiveAspect_m70F871B79302161CF7C0777C527E0A9A48B05B66_inline(__this, L_29, NULL);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:69>
+		Camera_set_orthographicSize_m76DD021032ACB3DDBD052B75EC66DCE3A7295A5C(L_25, L_26, NULL);
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:59>
 		return;
 	}
 }
@@ -12333,14 +12326,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HybridAspectLimiter__ctor_m957DA219C980C
 {
 	{
 		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:7>
-		__this->___designWidth = (9.0f);
+		__this->___targetWidth = (9.0f);
 		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:8>
-		__this->___designHeight = (18.0f);
+		__this->___targetHeight = (20.0f);
 		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:11>
-		__this->___flexibleWidth = (9.0f);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:12>
-		__this->___flexibleHeight = (16.0f);
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:15>
 		__this->___designOrthographicSize = (5.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -25054,7 +25043,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HybridAspectLimiter_set_CurrentEffectiveAspect_m70F871B79302161CF7C0777C527E0A9A48B05B66_inline (HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:21>
+		//<source_info:C:/Programming/Unity/Epstein Island/Birds_of_a_feather/Assets/Scripts/AspectRatioLimiter.cs:17>
 		float L_0 = ___0_value;
 		__this->___U3CCurrentEffectiveAspectU3Ek__BackingField = L_0;
 		return;

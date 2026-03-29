@@ -33319,10 +33319,8 @@ struct GroundScroller_t9F9E2784B2B4C22B61041F739027ACF54C74FCE5  : public MonoBe
 };
 struct HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	float ___designWidth;
-	float ___designHeight;
-	float ___flexibleWidth;
-	float ___flexibleHeight;
+	float ___targetWidth;
+	float ___targetHeight;
 	float ___designOrthographicSize;
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___cam;
 	float ___lastScreenW;
@@ -42853,9 +42851,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8113[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8114[5] = 
 {
 	static_cast<int32_t>(offsetof(RemoteConfigManager_t1E56FA71899D21B740FE7EFC0F85CF41C33B8BE6_StaticFields, ___U3CInstanceU3Ek__BackingField)),static_cast<int32_t>(offsetof(RemoteConfigManager_t1E56FA71899D21B740FE7EFC0F85CF41C33B8BE6, ___OnConfigUpdated)),static_cast<int32_t>(offsetof(RemoteConfigManager_t1E56FA71899D21B740FE7EFC0F85CF41C33B8BE6, ___configUrl)),static_cast<int32_t>(offsetof(RemoteConfigManager_t1E56FA71899D21B740FE7EFC0F85CF41C33B8BE6, ___showRemoteConfigOverlay)),static_cast<int32_t>(offsetof(RemoteConfigManager_t1E56FA71899D21B740FE7EFC0F85CF41C33B8BE6, ___U3CCurrentConfigU3Ek__BackingField)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8115[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8115[7] = 
 {
-	static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___designWidth)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___designHeight)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___flexibleWidth)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___flexibleHeight)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___designOrthographicSize)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___cam)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___lastScreenW)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___lastScreenH)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___U3CCurrentEffectiveAspectU3Ek__BackingField)),};
+	static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___targetWidth)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___targetHeight)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___designOrthographicSize)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___cam)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___lastScreenW)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___lastScreenH)),static_cast<int32_t>(offsetof(HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134, ___U3CCurrentEffectiveAspectU3Ek__BackingField)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8116[6] = 
 {
 	static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields, ___U3CInstanceU3Ek__BackingField)),static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B, ___musicSource)),static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B, ___muteSprite)),static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B, ___unmuteSprite)),static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B, ___U3CIsMutedU3Ek__BackingField)),static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields, ___OnMuteStateChanged)),};

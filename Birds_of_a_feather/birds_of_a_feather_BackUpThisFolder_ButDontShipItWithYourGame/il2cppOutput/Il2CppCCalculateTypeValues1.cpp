@@ -43261,10 +43261,8 @@ struct GroundScroller_t9F9E2784B2B4C22B61041F739027ACF54C74FCE5  : public MonoBe
 };
 struct HybridAspectLimiter_t97DA9C90CC09D227CD752A0E7FD44947BC16D134  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	float ___designWidth;
-	float ___designHeight;
-	float ___flexibleWidth;
-	float ___flexibleHeight;
+	float ___targetWidth;
+	float ___targetHeight;
 	float ___designOrthographicSize;
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___cam;
 	float ___lastScreenW;
